@@ -1,0 +1,4 @@
+name: Hello
+description: 'My Hello, World! demo'
+type: module
+core: 8.x
