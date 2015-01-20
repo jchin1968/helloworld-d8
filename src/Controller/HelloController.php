@@ -5,11 +5,11 @@ namespace Drupal\hello\Controller;
 use Drupal\Core\Controller\ControllerBase;
 
 class HelloController extends ControllerBase{
-  public function demo($name) {
+  public function demo($name, $count) {
     return array(
-      '#markup' => $this->t('Hello @name!', [
-        '@name' => $name,
-      ]),
+      '#theme' => 'hello',
+      '#name' => $name,
+      '#count' => $count,
     );
   }
 }

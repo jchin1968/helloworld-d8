@@ -1,0 +1,14 @@
+<?php
+/**
+ *  Implements hook_theme()
+ */
+function hello_theme() {
+  $theme['hello'] = [
+    'variables' => [
+      'name' => NULL,
+      'count' => NULL
+    ],
+    'template' => 'hello',
+  ];
+  return $theme;
+}
