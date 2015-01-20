@@ -10,6 +10,9 @@ class HelloController extends ControllerBase{
       '#theme' => 'hello',
       '#name' => $name,
       '#count' => $count,
+      '#attached' => [
+        'library' => ['hello/cool-style'],
+      ]
     );
   }
 }
