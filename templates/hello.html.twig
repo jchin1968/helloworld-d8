@@ -1,5 +1,9 @@
-<section>
-    {% for i in 1..count %}
-        <p>Hello {{ name }}!</p>
-    {% endfor %}
-</section>
+<div class="hello-world-demo">
+    {% if count > 0 %}
+        {% for i in 1..count %}
+            <p>Hello {{ name }}!</p>
+        {% endfor %}
+    {% else %}
+        <p>Goodbye cruel world!</p>
+    {% endif %}
+</div>
